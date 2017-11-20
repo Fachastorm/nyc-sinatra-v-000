@@ -1,7 +1,4 @@
-<h1>These are all your figures</h1>
-
-<%= @figure.each do |figure| %>
-
-<h2><%=figure.name%></h2>
-
-<%end%>
+<h1>Person Name</h1>
+   <% @figures.each do |figure| %>
+     <a href="/figures/<%= figure.id %>"><%= figure.name %></a>
+ <% end %>
